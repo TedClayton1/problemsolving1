@@ -18,17 +18,17 @@
 #input data string 
 # and then compress that string
 
-# new_string = ""
-# string = "olyoxandfreeeeeeee2223333322221111554998"
-# count = 1
-# for i in range(len(string)-1):
-#     if string[i] == string[i+1]:
-#         count = count + 1
-#     else:
-#         new_string = new_string + string[i] + str(count)
-#         count = 1
-# new_string = new_string + string[i+1] + str(count)
-# print(new_string)
+new_string = ""
+string = "aaaaaaaaabbbbbbcccccccccccddddddeeeeeeeeeeeeeeeeeeeeffffffffffffffffffggggggggggggggg"
+count = 1
+for i in range(len(string)-1):
+    if string[i] == string[i+1]:
+        count = count + 1
+    else:
+        new_string += string[i] + str(count)
+        count = 1
+new_string +=  string[i+1] + str(count)
+print(new_string)
 
 #word, phrase or sequence that reads the same forward as backward i.e madam(palindrome)
 #write code that takes user input and checks to see if is a palindrome and reports the result
